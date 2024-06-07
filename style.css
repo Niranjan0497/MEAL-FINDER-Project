@@ -1,0 +1,146 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.MealFinder_header{
+    display: flex;
+    justify-content:space-between;
+    background-color: orangered;
+    color: white;
+}
+.MealFinder_tittle{
+    padding-left: 25px;
+}
+.MealFinder_header .menu-icon i{
+    border: none;
+    padding: 5px 10px;
+    margin: 15px 25px 0px 0px ;
+    color: black;
+    font-size:25px;
+    color: white;
+    cursor: pointer;
+}
+nav{
+    display:none;
+    justify-content: flex-end;
+    width: 100%;
+   
+}
+nav.active{
+    display: flex;
+}
+
+nav .close-icon i{
+    border: 2px solid #e65c00;
+    padding: 3px 5px;
+    border-radius: 50px;
+    font-size:15px;
+    color:#e65c00;
+    position: fixed;
+    top:20px;
+    right: 40px;
+}
+.siderbar{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    height: 75vh;
+    width: 180px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    padding-top: 30px;
+    cursor: pointer;
+    transition: 0.80s;
+    
+
+}
+header nav .siderbar ul li{
+    list-style: none;  
+    padding: 12px 0px 5px 0px;
+    transition: 0.70s;   
+}
+header nav .siderbar ul li:hover{
+    color:#719099;
+}
+
+/* search-area Styling */
+.search-area{
+    background-image: url(https://images.pexels.com/photos/1435895/pexels-photo-1435895.jpeg?auto=compress&cs=tinysrgb&w=600 );
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    height: 300px;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search-area::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(58, 52, 52, 0.578);
+    z-index: 1;
+}
+ .search-container, .search-content {
+  position: relative;
+  z-index: 2;
+} 
+.search-container, .search-content {
+    position: relative;
+    z-index: 2;
+}  
+.search-container, .search-content {
+    position: relative;
+    z-index: 2;
+}  
+.search-container input, .search-container button{
+    z-index: 3;
+}
+
+.search-container{
+    margin-top: 60px;
+}
+.search-area .search-container input{
+    padding: 15px;
+    border-radius: 25px;
+    width: 300px;
+    border: none;
+}
+.search-area .search-container button{
+    padding: 13px 14px;
+    border: none;
+    border-radius: 25px;
+    background-color:#e65c00;
+    color: white;
+}
+.search-area .search-container button:hover{
+    background-color: white;
+    color:#e65c00;
+    border: 1px solid #e65c00;
+}
+
+
+
+.search-content{
+    margin-top: 15px;
+    text-align: center;
+}
+.search-area .search-content h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.search-area .search-content p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
